@@ -682,8 +682,14 @@ body {
 a {
   transition: color 0.6s;
 }
-.cid-sB1HEREjCz .navbar-dropdown {
-  position: relative !important;
+.cid-sB1HEREjCz {
+  z-index: 1000;
+  width: 100%;
+  position: relative;
+  min-height: 60px;
+}
+.cid-sB1HEREjCz nav.navbar {
+  position: fixed;
 }
 .cid-sB1HEREjCz .dropdown-item:before {
   font-family: Moririse2 !important;
@@ -746,7 +752,7 @@ a {
 }
 .cid-sB1HEREjCz .dropdown-menu,
 .cid-sB1HEREjCz .navbar.opened {
-  background: #ffe161 !important;
+  background: #ff9966 !important;
 }
 .cid-sB1HEREjCz .nav-item:focus,
 .cid-sB1HEREjCz .nav-link:focus {
@@ -781,7 +787,7 @@ a {
   transition: all 0.3s;
   border-bottom: 1px solid transparent;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  background: #ffe161;
+  background: #ff9966;
 }
 .cid-sB1HEREjCz .navbar.opened {
   transition: all 0.3s;
@@ -921,7 +927,7 @@ a {
   padding: 0.667em 1.667em;
 }
 .cid-sB1HEREjCz .navbar.navbar-expand-lg .dropdown .dropdown-menu {
-  background: #ffe161;
+  background: #ff9966;
 }
 .cid-sB1HEREjCz .navbar.navbar-expand-lg .dropdown .dropdown-menu .dropdown-submenu {
   margin: 0;
@@ -952,7 +958,7 @@ a {
   width: 30px;
   height: 2px;
   border-right: 5px;
-  background-color: #000000;
+  background-color: #232323;
 }
 .cid-sB1HEREjCz button.navbar-toggler .hamburger span:nth-child(1) {
   top: 0;
@@ -994,6 +1000,7 @@ a {
 }
 .cid-sB1HEREjCz .navbar-dropdown {
   padding: 0 1rem;
+  position: fixed;
 }
 .cid-sB1HEREjCz a.nav-link {
   display: flex;
@@ -1049,21 +1056,134 @@ a {
 .cid-sB1HTzWL2p {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #bed3f9;
+  background-color: #ff9966;
 }
-.cid-sB1YrnfC8f {
-  padding-top: 6rem;
-  padding-bottom: 10rem;
-  background-image: url("../../../assets/images/young-traveler-man-showing-something-with-holding-map-standing-against-blue-background.jpeg");
+.cid-sB6EbLNRDV {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #ff9966;
 }
-.cid-sB1YrnfC8f .image-wrap img {
-  width: 100%;
+.cid-sB6EbLNRDV .mbr-overlay {
+  z-index: 1;
 }
 @media (min-width: 992px) {
-  .cid-sB1YrnfC8f .image-wrap img {
-    display: block;
-    margin: auto;
-    width: 90%;
+  .cid-sB6EbLNRDV .carousel {
+    min-height: 800px;
+  }
+  .cid-sB6EbLNRDV .carousel img {
+    max-height: 800px;
+    object-fit: contain;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .cid-sB6EbLNRDV .carousel {
+    min-height: 520px;
+  }
+  .cid-sB6EbLNRDV .carousel img {
+    max-height: 520px;
+    object-fit: contain;
+  }
+}
+@media (max-width: 767px) {
+  .cid-sB6EbLNRDV .carousel {
+    min-height: 440px;
+  }
+  .cid-sB6EbLNRDV .carousel img {
+    max-height: 440px;
+    object-fit: contain;
+  }
+  .cid-sB6EbLNRDV .container .carousel-control {
+    margin-bottom: 0;
+  }
+  .cid-sB6EbLNRDV .content-slider-wrap {
+    width: 100% !important;
+  }
+}
+.cid-sB6EbLNRDV .carousel,
+.cid-sB6EbLNRDV .carousel-inner {
+  display: flex;
+  align-items: center;
+}
+.cid-sB6EbLNRDV .item-wrapper {
+  width: 100%;
+}
+.cid-sB6EbLNRDV .carousel-caption {
+  bottom: 40px;
+}
+.cid-sB6EbLNRDV .carousel-control:hover {
+  background: #1b1b1b;
+  color: #fff;
+  opacity: 1;
+}
+.cid-sB6EbLNRDV .mobi-mbri-arrow-next {
+  margin-left: 5px;
+}
+.cid-sB6EbLNRDV .mobi-mbri-arrow-prev {
+  margin-right: 5px;
+}
+.cid-sB6EbLNRDV .container .carousel-indicators {
+  margin-bottom: 3px;
+}
+.cid-sB6EbLNRDV .carousel-control {
+  top: 50%;
+  width: 60px;
+  height: 60px;
+  margin-top: -1.5rem;
+  font-size: 22px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+.cid-sB6EbLNRDV .carousel-control.carousel-control-prev {
+  left: 0;
+  margin-left: 2.5rem;
+}
+.cid-sB6EbLNRDV .carousel-control.carousel-control-next {
+  right: 0;
+  margin-right: 2.5rem;
+}
+@media (max-width: 767px) {
+  .cid-sB6EbLNRDV .carousel-control {
+    top: auto;
+    bottom: 1rem;
+  }
+}
+.cid-sB6EbLNRDV .carousel-indicators {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1.5rem !important;
+}
+.cid-sB6EbLNRDV .carousel-indicators li {
+  max-width: 15px;
+  height: 15px;
+  width: 15px;
+  max-height: 15px;
+  margin: 3px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+.cid-sB6EbLNRDV .carousel-indicators li.active,
+.cid-sB6EbLNRDV .carousel-indicators li:hover {
+  opacity: 0.9;
+}
+.cid-sB6EbLNRDV .carousel-indicators li::after,
+.cid-sB6EbLNRDV .carousel-indicators li::before {
+  content: none;
+}
+.cid-sB6EbLNRDV .carousel-indicators.ie-fix {
+  left: 50%;
+  display: block;
+  width: 60%;
+  margin-left: -30%;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .cid-sB6EbLNRDV .carousel-indicators {
+    display: none !important;
   }
 }
 .cid-sB1I4FldlE {
@@ -1082,10 +1202,10 @@ a {
 .cid-sB20yTD9sd {
   padding-top: 6rem;
   padding-bottom: 6rem;
-  background-image: url("../../../assets/images/silhouette-of-person-standing-on-the-top-of-hill-under-the-beautiful-colorful-sky-in-the-morning-2000x1333.jpeg");
+  background-image: url("../../../assets/images/silhouette-of-person-standing-on-the-top-of-hill-under-the-beautiful-colorful-sky-in-the-morning-2-2000x1333.jpeg");
 }
 .cid-sB20yTD9sd .mbr-overlay {
-  background-color: #bed3f9;
+  background-color: #ff9966;
   opacity: 0.5;
 }
 .cid-sB20yTD9sd form .mbr-section-btn {
@@ -1103,9 +1223,9 @@ a {
 .cid-sB20BzsFUZ {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #232323;
+  background-color: #ff9966;
   overflow: hidden;
 }
 .cid-sB20BzsFUZ .media-container-row .mbr-text {
-  color: #ffe161;
+  color: #232323;
 }
